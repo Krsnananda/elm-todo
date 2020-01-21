@@ -1,4 +1,4 @@
-module Main exposing (main)
+module EditableTodos18 exposing (main)
 
 -- I got lazy exposing all of those functions from the Html module, so
 -- I decided to use (..), which means that I'm exposing all the functions
@@ -70,7 +70,7 @@ view model =
                     , value model.text
                     , autofocus True
                     , class "form-control"
-                    , placeholder "Enter a todo"
+                    , placeholder "Insira um item"
                     ]
                     []
                 ]
@@ -218,7 +218,7 @@ main =
     sandbox
         { init =
             { text = ""
-            , todos = [ "Laundry", "Dishes" ]
+            , todos = [ "Livros", "Jogos" ]
             , editing = Nothing
             }
         , view = view
